@@ -1,0 +1,269 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url(../img/seamless.png);
+	color: #5F5F5F;
+	font:400 25px/1.4 'Open Sans', sans-serif;
+	margin: 0 auto;
+	padding-top: 25px;
+	width: 960px;
+}
+
+fieldset{
+	border: none;
+}
+
+label{
+	display: inline-block;
+	text-align: right;
+	width: 160px;
+	margin-right: 10px;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 40px;
+	margin: 25px 0;
+	text-align: center;
+}
+
+input:focus, textarea:focus, select:focus{
+	border-color: rgb(139, 220, 220);
+ 	outline: none;
+}
+
+ul li {
+    cursor: pointer;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 150px;
+}
+
+ul li:hover{
+	color: white;
+}
+
+textarea{
+	vertical-align: top;
+	resize: none; 
+	min-height:200px; 
+}
+
+textarea, input, select{
+	border: 1px solid transparent;
+	border-radius: 10px;
+	font:300 22px/1.4 'Open Sans', sans-serif;
+	padding: 10px 0 10px 10px;
+	width: 287px;
+}
+
+/*IDs into the project*/
+#add, #buy{
+	float: right;
+}
+
+#add, #buy, #add-another, #continue{
+	background-color: rgb(227, 233, 179); 
+	border: 3px solid #5F5F5F;
+	border-radius: 50px;
+}
+
+#add:hover, #buy:hover, #add-another:hover, #continue:hover{
+	color: white;
+	border-color: white;
+	background-color: rgb(149, 148, 146);
+}
+
+#cart{
+	margin-bottom: 20px; 
+}
+
+#cart div p{
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+#content{
+	overflow: hidden;
+}
+
+#content #slider > div{
+    float: left;
+    width: 960px;
+    margin-bottom: 40px;
+}
+
+#continue{
+	float: none;
+	margin: 0 auto;
+	width: 270px;
+}
+
+#checkout-cart{
+	border-right: 4px dotted #5F5F5F;
+}
+
+#checkout-content >  div{
+	float: left;
+	width: 478px;
+	height: 750px;
+}
+
+#mask{
+	display: block;
+	margin: 0 auto;
+}
+
+#nav{
+	border-bottom: 4px dotted #5F5F5F;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#icon-selected{
+	-moz-transform: translate(170px,-540px);
+	-webkit-transform: translate(170px,-540px);
+	transform: translate(170px,-540px);
+}
+
+#input-type{
+	width: 301px;
+}
+
+#logo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+#selection-content > div{  
+	float: left;
+	width: 480px;
+}
+
+#selection-icon img{
+	border: solid 2px rgb(95, 95, 95);
+	margin:  0 0 16px 6px;
+	border-radius: 5px;
+}
+
+#selection-icon img:hover{
+	border-color: white;
+}
+
+#slider{
+	width: 2880px;
+}
+
+#selection-color .selected-color{
+	border-color: white;
+}
+
+
+/*Classes into the project*/
+.box{
+	border: solid 6px rgb(224, 221, 212);
+	float: left;
+	height: 68px;
+	margin-right: 14px;
+	opacity: 0.7;
+	width: 70px;
+}
+
+.box:hover{
+	opacity: 1;
+}
+
+.error{
+	color: red; 
+}
+
+.form-group{
+	margin-bottom: 40px; 
+}
+
+.none{
+	display: none;
+}
+
+.opacity{
+	opacity: 1;
+}
+
+.remove{
+	cursor: pointer;
+	float: right;
+	margin-right: 60px;
+}
+
+.remove:hover{
+	color: red;
+}
+
+.selected-tab{
+	color: #8BDCDC;
+	background-color: #5F5F5F; 
+	border-radius: 10px;
+}
+
+/*Div colors*/
+#blue{
+	background-color: #325190; 
+}
+
+#gray{
+	background-color: #676767; 
+}
+
+#orange{
+	background-color: #b56422; 
+}
+
+#green{
+	background-color: #5b953c; 
+}
+
+#lightblue{
+	background-color: #3d7b93; 
+}
+
+#pink{
+	background-color: #A03B71; 
+}
+
+#purple{
+	background-color: #6b5180; 
+}
+	
+#red{
+	background-color: #8a4646; 
+}
+
+#turquoise{
+	background-color: #1599AA;
+}
+
+#yellow{
+	background-color: #b3a629;
+}
+
+/*Just things I found*/
+::selection {
+background: rgb(139, 220, 220);
+}
+
+::-moz-selection {
+background: rgb(139, 220, 220);
+}
+
+::-webkit-selection {
+background: rgb(139, 220, 220);
+}

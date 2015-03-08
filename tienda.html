@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head content-->
+<head>
+	<meta charset="UTF-8" />
+	<meta description="Simulator of a t-shirt Shop" />
+	<meta author="Carlos Vargas Arce">	
+	<link rel="stylesheet" href="css/tienda.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<script type="text/javascript" src="js/util/jquery.js"></script>
+	<script type="text/javascript" src="js/tienda.js"></script>
+	<title>T!Shirt Shop</title>
+</head>
+<!-- Body content-->
+<body>
+	<!-- Header content-->
+	<header>
+		<figure id="logo">
+			<img src="img/logo.png" title="T!Shirt Logo" alt="Logo T!Shirt" />
+		</figure>
+		<div class="cf"></div>
+	</header>
+	<!-- Nav content-->
+	<section id="nav">
+		<ul id="tabs">
+	      <li id="selection" class="selected-tab">Selection</li>
+	      <li id="checkout">Checkout</li>
+    	</ul>
+    	<ul>
+    	  <li id="add">Add</li>
+	      <li id="buy" class="none">Buy</li>
+    	</ul>
+    	<div class="cf"></div>
+	</section>
+	<!-- Main content-->
+	<section id="content">
+		<div id="slider">
+			<!-- First Tab-->
+			<div id="selection-content">
+				<!-- Selecting de color-->
+				<div id="selection-color">
+					<h1>Color</h1>
+					<img src="img/shirt-lightblue.png" alt="Shirt" width="480px" height="480px" id="shirt"/>
+					<div class="box selected-color opacity" id="lightblue"></div>
+					<div class="box" id="gray"></div>
+					<div class="box" id="green"></div>
+					<div class="box" id="red"></div>
+					<div class="box" id="purple"></div>	
+					<div class="box" id="orange"></div>	
+					<div class="box" id="turquoise"></div>	
+					<div class="box" id="blue"></div>	
+					<div class="box" id="pink"></div>	
+					<div class="box" id="yellow"></div>	
+					<img src="img/tree.png" alt="Tree" width="145px" height="145px" id="icon-selected" />
+				</div>
+				<!--Selecting the icon-->					
+				<div id="selection-icon">
+					<h1>Icon</h1>
+					<img src="img/tree.png" alt="Tree" width="105px" height="105px" id="tree" />
+					<img src="img/dragon.png" alt="Dragon" width="105px" height="105px" id="dragon" />
+					<img src="img/winch.png" alt="Winchester" width="105px" height="105px" id="winch" />
+					<img src="img/transformer.png" alt="Transformer" width="105px" height="105px" id="transformer" />
+					<img src="img/konoha.png" alt="Konoha" width="105px" height="105px" id="konoha"/>
+					<img src="img/batman.png" alt="Batman" width="105px" height="105px" id="batman" />
+					<img src="img/apple.png" alt="Apple Logo" width="105px" height="105px" id="apple" />
+					<img src="img/propeller.png" alt="Tribal" width="105px" height="105px" id="propeller" />
+					<img src="img/superman.png" alt="Superman" width="105px" height="105px" id="superman" />
+					<img src="img/mockingjay.png" alt="Mockinjay" width="105px" height="105px" id="mockingjay" />
+					<img src="img/skull.png" alt="Skull" width="105px" height="105px" id="skull" />
+					<img src="img/wings.png" alt="Wings" width="105px" height="105px" id="wings" />
+					<img src="img/guevara.png" alt="Guevara" width="105px" height="105px" id="guevara" />
+					<img src="img/amd.png" alt="Amd" width="105px" height="105px" id="amd" />
+					<img src="img/flamebro.png" alt="Flamebro" width="105px" height="105px" id="flamebro" />
+					<img src="img/hbo.png" alt="Hbo" width="105px" height="105px" id="hbo" />
+					<img src="img/playstation.png" alt="Wings" width="105px" height="105px" id="playstation" />
+					<img src="img/mouse.png" alt="Mouse" width="105px" height="105px" id="mouse" />
+					<img src="img/html.png" alt="Html" width="105px" height="105px" id="html" />
+					<img src="img/breakingbad.png" alt="BreakingBad" width="105px" height="105px" id="breakingbad" />
+				</div>
+			</div>
+			<!-- Second Tab-->
+			<div id="checkout-content">
+				<!--Where orders enter "cart"-->
+				<div id="checkout-cart">
+					<h1>Cart</h1>
+					<div id="cart"></div>
+					<ul>
+						<li id="add-another">Add ++</li>
+					</ul>
+				</div>
+				<!-- Form required to process the purchase-->
+				<div id="checkout-adress">
+					<form action="post" id="form-container">
+						<h1>Address</h1>
+						<fieldset>
+
+							<div class="form-group">
+            					<label for="input-persona">Name</label>           			
+            					<input type="text" id="input-persona" placeholder="Carlos Vargas Arce"/>
+            				</div>
+
+            				<div class="form-group">
+            					<label for="input-address">Address</label>           			
+            					<textarea type="text" id="input-address" placeholder="Write your complete street address..."></textarea>
+            				</div>
+
+            				<div class="form-group">
+            					<label for="input-card">Credit Card</label>           			
+            					<input type="text" id="input-card" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+            				</div>
+
+            				<div class="form-group">
+            					<label for="input-type">Type</label>           			
+            					<select name="card-type" id="input-type"> 
+            						<option value="American Express">American Express</option> 
+            						<option value="Visa">Visa</option>
+            						<option value="Master Card">Master Card</option>
+            					</select>
+            				</div>
+
+            				<div class="form-group">
+            					<label for="input-cvv">CVV</label>           			
+            					<input type="text" id="input-cvv" placeholder="XXX"/>
+            				</div>
+
+						</fieldset>					
+					</form>
+				</div>
+			</div>
+			<!-- Last Tab-->
+			<div id="gratitude">
+				<h1>Thank you very much for your purchase!</h1>
+				<img src="img/mask.png" alt="Gas Mask" width="480px" height="480px" id="mask"/>
+				<ul>
+					<li id="continue">Continue shopping</li>
+				</ul>
+			</div>
+		</div>
+		
+	</section>
+</body>
+</html>

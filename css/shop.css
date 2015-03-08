@@ -164,7 +164,7 @@ textarea, input, select{
 }
 
 #selection-color .selected-color{
-	border-color: white;
+	border-color: rgb(169, 174, 170);
 }
 
 
